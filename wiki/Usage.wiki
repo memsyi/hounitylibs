@@ -1,0 +1,39 @@
+#summary HOUnityLibs usage.
+#labels Featured
+
+As of now, HOUnityLibs is composed of two projects (HOEditorGUIFramework and HOEditorUtils), each of which generates a separate and independent assembly (you can find the compiled files inside each bin directory). It is still in alpha: everything works, and I will add stuff to it while I go on, but it's yet to be fully documented and I might change parts of the API.
+
+----
+= HOEditorGUIFramework =
+
+=== HOGUILayout ===
+A static class used to draw and layout content, inspired by [https://twitter.com/brenoazevedo Breno Azevedo]'s GUILayout alternative. It contains various methods to draw special GUI elements (drag&drop areas, buttons, toolbars, toggles, foldouts, etc.), and is also meant to replace any Unity vertical/horizontal/disabled GUILayout block, as this examples shows:
+{{{
+// instead of this:
+GUILayout.BeginHorizontal();
+/* code lines */
+GUILayout.EndHorizontal();
+
+// You can do this
+HOGUILayout.Horizontal(() => {
+  /* code lines */
+});
+// Pro: way more readable and less prone to errors
+// Con: you can't simply exit an action
+}}}
+
+=== HOGUIDrag ===
+Allows dragging of elements inside a panel.
+
+=== HOGUIStyle ===
+Various ready-made styles to use with the GUI.
+
+=== HOEditorUndoManager ===
+Allows to manage undo easily and effectively on every custom panel/window.
+
+=== ExtensionMethods ===
+Useful extension methods.
+
+----
+= HOEditorUtils =
+Simple utils for use in UnityEditor.
