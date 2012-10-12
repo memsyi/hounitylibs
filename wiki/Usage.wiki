@@ -1,7 +1,7 @@
 #summary HOUnityLibs usage.
 #labels Featured
 
-As of now, HOUnityLibs is composed of two projects (HOEditorGUIFramework and HOEditorUtils), each of which generates a separate and independent assembly (you can find the compiled files inside each bin directory). It is still in alpha: everything works, and I will add stuff to it while I go on, but it's yet to be fully documented and I might change parts of the API.
+As of now, HOUnityLibs is composed of 3 projects, each of which generates a separate and independent assembly (you can find the compiled files inside each bin directory). It is still in alpha: everything works, and I will add stuff to it while I go on, but it's yet to be fully documented and I might change parts of the API.
 
 ----
 = HOEditorGUIFramework =
@@ -37,3 +37,7 @@ Useful extension methods.
 ----
 = HOEditorUtils =
 Simple utils for use in UnityEditor.
+
+----
+= HODebugFramework =
+Components and utils for debugging purposes.
