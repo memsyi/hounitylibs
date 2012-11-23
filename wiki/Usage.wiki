@@ -46,6 +46,8 @@ Components and utils for debugging purposes.
 = HO2DToolkit =
 Framework for [http://www.unikronsoftware.com/2dtoolkit/ Unikron's 2D Toolkit]. It allows to easily use sprites as GUI elements. To use it, you have to implement the Holoville.HO2DToolkit.IHOtk2dSprite interface in 2D Toolkit's tk2dBaseSprite class (nothing special: just add the interface and the implementation is already done).
 
+*Requires the open-source [http://www.holoville.com/hotween/ HOTween tweening library] to be in your Unity project*
+
 === HOtk2dButton ===
 Attach this component to a sprite, in order to manage it as a button. Can automatically add animations, correctly manages layered elements in a realistic way (by avoiding the activation of buttons when other elements are on top of them), can be set as a toggle, and can be included in a "toggleGroup" (which works like radio buttons, where selecting one will deselect the others).
 
