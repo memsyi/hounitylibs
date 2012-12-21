@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HO2DToolkit</name>
+    </assembly>
+    <members>
+        <member name="T:Holoville.HO2DToolkit.HOtk2dButton">
+            <summary>
+            Attach this component to a sprite to use it as a button.
+            </summary>
+        </member>
+        <member name="M:Holoville.HO2DToolkit.HOtk2dButton.ToggleOn">
+            <summary>
+            Selects this button (only if it's a toggle button)
+            </summary>
+        </member>
+        <member name="M:Holoville.HO2DToolkit.HOtk2dButton.ToggleOff">
+            <summary>
+            Deselects this button (only if it's a toggle button)
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.HOtk2dButton.selected">
+            <summary>
+            Returns TRUE if this button is a toggle and is actually selected
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.HOtk2dButtonEvent.type">
+            <summary>
+            Type of event
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.HOtk2dButtonEvent.target">
+            <summary>
+            Button that dispatched this event
+            </summary>
+        </member>
+        <member name="T:Holoville.HO2DToolkit.IHOtk2dSprite">
+            <summary>
+            Interface to add to the tk2dBaseSprite class in order to use the HO2DToolkit library.
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.IHOtk2dSprite.spriteId">
+            <summary>
+            Sprite id
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.IHOtk2dSprite.color">
+            <summary>
+            Color
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.IHOtk2dSprite.scale">
+            <summary>
+            Sprite scale
+            </summary>
+        </member>
+        <member name="T:Holoville.HO2DToolkit.HOtk2dGUIManager">
+            <summary>
+            Manager for HO2DToolkit GUI elements,
+            automatically added at runtime when needed.
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.HOtk2dGUIManager.defaultGuiCamera">
+            <summary>
+            Camera that will be used for all new buttons that don't have a camera set.
+            Default to Camera.main if not set.
+            </summary>
+        </member>
+        <member name="T:Holoville.HO2DToolkit.IHOtk2dTextMesh">
+            <summary>
+            Interface to add to the tk2dTextMesh class in order to use the HO2DToolkit library.
+            </summary>
+        </member>
+        <member name="M:Holoville.HO2DToolkit.IHOtk2dTextMesh.Commit">
+            <summary>
+            Commits the changes to the text
+            </summary>
+        </member>
+        <member name="P:Holoville.HO2DToolkit.IHOtk2dTextMesh.text">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="T:Holoville.HO2DToolkit.HOtk2dButtonEventType">
+            <summary>
+            Enums for an <see cref="T:Holoville.HO2DToolkit.HOtk2dButtonEvent"/> type.
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Select">
+            <summary>
+            A toggle button is selected
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Deselect">
+            <summary>
+            A toggle buttons is deselected
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Toggle">
+            <summary>
+            A toggle button is toggled (selected or deselected)
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Press">
+            <summary>
+            The mouse was pressed over the button
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Release">
+            <summary>
+            The mouse was released inside or outside the button,
+            after the button was pressed
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.Click">
+            <summary>
+            The mouse was released inside the same button that was initially pressed
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.RollOver">
+            <summary>
+            The mouse rolled over a button which has a rollover animation
+            </summary>
+        </member>
+        <member name="F:Holoville.HO2DToolkit.HOtk2dButtonEventType.RollOut">
+            <summary>
+            The mouse rolled out of a button which has a rollover animation
+            </summary>
+        </member>
+    </members>
+</doc>
