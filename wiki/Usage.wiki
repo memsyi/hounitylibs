@@ -48,7 +48,8 @@ Framework for [http://www.unikronsoftware.com/2dtoolkit/ Unikron's 2D Toolkit]. 
   * Holoville.HO2DToolkit.IHOtk2dSprite interface in 2D Toolkit's tk2dBaseSprite class
   * Holoville.HO2DToolkit.IHOtk2dTextMesh interface in 2D Toolkit's tk2dTextMesh class
   * Holoville.HO2DToolkit.IHOtk2dSlicedSprite interface in 2D Toolkit's tk2dSlicedSprite class
-  * Add this as the first line of tk2dBaseSprite: {{{public string GetSpriteName() { return CurrentSprite.name; } }}}
+  * Add this as the first line of tk2dBaseSprite:
+  {{{public string GetSpriteName() { return CurrentSprite.name; } }}}
 
 *Requires the open-source [http://www.holoville.com/hotween/ HOTween tweening library] to be in your Unity project*
 
