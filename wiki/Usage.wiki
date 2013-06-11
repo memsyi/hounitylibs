@@ -44,7 +44,11 @@ Components and utils for debugging purposes.
 
 ----
 = HO2DToolkit =
-Framework for [http://www.unikronsoftware.com/2dtoolkit/ Unikron's 2D Toolkit]. It allows to easily use sprites as GUI elements. To use it, you have to implement the Holoville.HO2DToolkit.IHOtk2dSprite interface in 2D Toolkit's tk2dBaseSprite class (nothing special: just add the interface and the implementation is already done).
+Framework for [http://www.unikronsoftware.com/2dtoolkit/ Unikron's 2D Toolkit]. It allows to easily use sprites as GUI elements. To use it, you have to implement some interfaces in 2D Toolkit (nothing special: just add the interfaces and the implementation is already done):
+  * Holoville.HO2DToolkit.IHOtk2dSprite interface in 2D Toolkit's tk2dBaseSprite class
+  * Holoville.HO2DToolkit.IHOtk2dTextMesh interface in 2D Toolkit's tk2dTextMesh class
+  * Holoville.HO2DToolkit.IHOtk2dSlicedSprite interface in 2D Toolkit's tk2dSlicedSprite class
+  * Add this as the first line of tk2dBaseSprite: {{{public string GetSpriteName() { return CurrentSprite.name; } }}}
 
 *Requires the open-source [http://www.holoville.com/hotween/ HOTween tweening library] to be in your Unity project*
 
